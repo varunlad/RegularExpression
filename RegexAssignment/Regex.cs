@@ -9,9 +9,9 @@ namespace RegexAssignment
 {
     class Regex058assignment
     {
-            string pattern = "^[a-zA-z]{8,}$";    
+            string pattern = "^[a-zA-Z]{1,}[A-Z]{1,}[a-zA-Z]*$";    
             //writing the valid pattern
-            string[] inputs = { "xvs52","91 98scv8189","V792479017134","SaksHawsfn","56 740921740", "Bfjx", "abc@1.com","Vascrun" };//Validating some Example
+            string[] inputs = { "xvdfsdvgvsfdb","91 98scv8189","V792479017134","SaksHawsfn","56 740921740", "Bfjx", "abc@1.com","Vascrun" };//Validating some Example
 
 
         /// <summary>
