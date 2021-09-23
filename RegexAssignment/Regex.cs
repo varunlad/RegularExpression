@@ -9,9 +9,9 @@ namespace RegexAssignment
 {
     class Regex058assignment
     {
-            string pattern = "^[A-Z]{1}[a-z]{3,}$";    
+            string pattern = "^[A-Z]{1}[a-z]{2,}[ ]{1}[A-Z]{1}[a-z]{2,}$";    
             //writing the valid pattern
-            string[] inputs = { "varu","varUnl?ad","Varun134","SaksHi.com","DHVSJK", "ab", "abc@1.com","Varun" };//Validating some Example
+            string[] inputs = { "Varun Lad","varUnl?ad","Varun134","SaksHi.com","DHVSJK", "Bfghjbjsb Gkajx", "abc@1.com","Varun" };//Validating some Example
 
 
         /// <summary>
@@ -20,7 +20,7 @@ namespace RegexAssignment
             public void Validation()
             {
                 Regex regrex1 = new Regex(pattern);
-                Console.WriteLine("Validating User First name: ");
+                Console.WriteLine("Validating User First & Last name: ");
                 ItarateLoop(inputs, regrex1);
             }          
             public void ItarateLoop(string[] arr, Regex regrex1)
