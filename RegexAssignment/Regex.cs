@@ -9,9 +9,9 @@ namespace RegexAssignment
 {
     class Regex058assignment
     {
-            string pattern = "^[A-Z]{1}[a-z]{2,}[ ]{1}[A-Z]{1}[a-z]{2,}$";    
+            string pattern = "^[a-zA-Z0-9]+[.]*[a-zA-Z0-9]*@[a-zA-Z0-9]{1,10}[.]*[a-zA-Z]{2,10}[.]*[a-zA-Z]*$";    
             //writing the valid pattern
-            string[] inputs = { "Varun Lad","varUnl?ad","Varun134","SaksHi.com","DHVSJK", "Bfghjbjsb Gkajx", "abc@1.com","Varun" };//Validating some Example
+            string[] inputs = { "Varun Lad","varUnl?ad","abc.xyz@bl.co.in","varunlad5@gmail.com","DHVSJK@.com", "Bfghjbjsb Gkajx", "abc@1.com","Varun" };//Validating some Example
 
 
         /// <summary>
