@@ -20,7 +20,7 @@ namespace RegexAssignment
             public void Validation()
             {
                 Regex regrex1 = new Regex(pattern);
-                Console.WriteLine("Validating User First & Last name: ");
+                Console.WriteLine("Validating User Mobile Number: ");
                 ItarateLoop(inputs, regrex1);
             }          
             public void ItarateLoop(string[] arr, Regex regrex1)
