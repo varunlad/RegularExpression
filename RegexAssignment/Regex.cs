@@ -9,9 +9,9 @@ namespace RegexAssignment
 {
     class Regex058assignment
     {
-            string pattern = "^[a-zA-Z0-9]{1,}[@&*?_-]{1}[a-zA-Z0-9]*$";    
+            string pattern = "^[a-zA-Z0-9]+[._+]{0,1}[a-zA-Z0-9]*@[a-zA-Z0-9]{1,10}.[a-zA-Z]{2,10}[.]*[a-zA-Z]*$";    
             //writing the valid pattern
-            string[] inputs = { "xvdfsdv&g42vsfdb","9198scv8189","VhawfhaiwhUG22?4114FDIUG","Sa1_1ksHawsfn","56 740921740", "Bfjx", "abc@1.com","Vascrun" };//Validating some Example
+            string[] inputs = {  "abc@yahoo.com" ,"abc","abc111@abc.com","abc()*@gmail.com","abc-100@abc.net","abc@.com.my","abc.100@abc.com.au" };//Validating some Example
 
 
         /// <summary>
@@ -20,7 +20,7 @@ namespace RegexAssignment
             public void Validation()
             {
                 Regex regrex1 = new Regex(pattern);
-                Console.WriteLine("Validating User Password: ");
+                Console.WriteLine("Validating User Email ID : ");
                 ItarateLoop(inputs, regrex1);
             }          
             public void ItarateLoop(string[] arr, Regex regrex1)
