@@ -14,8 +14,8 @@ namespace UnitTestProject1
 
             //Arrange
             string  excepted=  "happy";
-            string[] message = { "varunlad5@gmail.com" };
-            Regex058assignment EmailValidation = new Regex058assignment(message);
+            string input = "varunlad5@gmail.com";
+            Regex058assignment EmailValidation = new Regex058assignment(input);
 
             //ACT
             string actual = EmailValidation.EmailValidation();
@@ -30,8 +30,8 @@ namespace UnitTestProject1
             
             //Arrange
             string excepted = "sad";
-            string[] message = { "varun??d5@gmail.com" };
-            Regex058assignment EmailValidation = new Regex058assignment(message); ;//Creating a object and passing a message
+            string input = "varun??d5@gmail.com";
+            Regex058assignment EmailValidation = new Regex058assignment(input); ;//Creating a object and passing a message
 
             //ACT
             string actual = EmailValidation.EmailValidation();
@@ -47,8 +47,8 @@ namespace UnitTestProject1
 
             //Arrange
             string excepted = "happy";
-            string[] message = { "Varun" };
-            Regex058assignment EmailValidation = new Regex058assignment(message);
+            string input = "Varun";
+            Regex058assignment EmailValidation = new Regex058assignment(input);
 
             //ACT
             string actual = EmailValidation.NameValidation();
@@ -63,8 +63,8 @@ namespace UnitTestProject1
 
             //Arrange
             string excepted = "sad";
-            string[] message = { "varun?" };
-            Regex058assignment EmailValidation = new Regex058assignment(message); ;//Creating a object and passing a message
+            string input = "varun?";
+            Regex058assignment EmailValidation = new Regex058assignment(input); ;//Creating a object and passing a message
 
             //ACT
             string actual = EmailValidation.NameValidation();
@@ -80,8 +80,8 @@ namespace UnitTestProject1
 
             //Arrange
             string excepted = "happy";
-            string[] message = { "91 9834978189" };
-            Regex058assignment EmailValidation = new Regex058assignment(message);
+            string input =  "91 9834978189";
+            Regex058assignment EmailValidation = new Regex058assignment(input);
 
             //ACT
             string actual = EmailValidation.MobileNumberValidation();
@@ -96,8 +96,8 @@ namespace UnitTestProject1
 
             //Arrange
             string excepted = "sad";
-            string[] message = { "varun?" };
-            Regex058assignment EmailValidation = new Regex058assignment(message); ;//Creating a object and passing a message
+            string input =  "varun?" ;
+            Regex058assignment EmailValidation = new Regex058assignment(input); ;//Creating a object and passing a message
 
             //ACT
             string actual = EmailValidation.MobileNumberValidation();
@@ -112,8 +112,8 @@ namespace UnitTestProject1
 
             //Arrange
             string excepted = "happy";
-            string[] message = { "Sa1_1ksHawsfn" };
-            Regex058assignment EmailValidation = new Regex058assignment(message);
+            string input =  "Sa1_1ksHawsfn" ;
+            Regex058assignment EmailValidation = new Regex058assignment(input);
 
             //ACT
             string actual = EmailValidation.PassWordValidation();
@@ -128,8 +128,8 @@ namespace UnitTestProject1
 
             //Arrange
             string excepted = "sad";
-            string[] message = { "9198scv8189" };
-            Regex058assignment EmailValidation = new Regex058assignment(message); ;//Creating a object and passing a message
+            string input =  "9198scv8189" ;
+            Regex058assignment EmailValidation = new Regex058assignment(input); ;//Creating a object and passing a message
 
             //ACT
             string actual = EmailValidation.PassWordValidation();

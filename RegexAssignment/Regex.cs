@@ -17,9 +17,9 @@ namespace RegexAssignment
         /// Validation this instance.
         /// </summary>
         /// 
-        public string[] inputs;
+        public string inputs;
 
-        public Regex058assignment(string[] inputs)
+        public Regex058assignment(string inputs)
         {
             this.inputs = inputs;
         }
@@ -31,15 +31,15 @@ namespace RegexAssignment
             {
                 for (int i = 0; i < inputs.Length; i++)//validation Loop
                 {
-                    bool result = regrex1.IsMatch(inputs[i]);
+                    bool result = regrex1.IsMatch(inputs);
                     if (result)
                     {
-                        Console.WriteLine(inputs[i] + " It is --->" + "Valid");
+                        Console.WriteLine(inputs + " It is --->" + "Valid");
                         return "happy";
                     }
                     else
                     {
-                        Console.WriteLine(inputs[i] + " It is --->" + "Invalid");
+                        Console.WriteLine(inputs + " It is --->" + "Invalid");
                         return "sad";
                     }
                 }
@@ -60,15 +60,15 @@ namespace RegexAssignment
             {
                 for (int i = 0; i < inputs.Length; i++)//validation Loop
                 {
-                    bool result = regrex2.IsMatch(inputs[i]);
+                    bool result = regrex2.IsMatch(inputs);
                     if (result)
                     {
-                        Console.WriteLine(inputs[i] + " It is --->" + "Valid");
+                        Console.WriteLine(inputs + " It is --->" + "Valid");
                         return "happy";
                     }
                     else
                     {
-                        Console.WriteLine(inputs[i] + " It is --->" + "Invalid");
+                        Console.WriteLine(inputs + " It is --->" + "Invalid");
                         return "sad";
                     }
                 }
@@ -90,15 +90,15 @@ namespace RegexAssignment
             {
                 for (int i = 0; i < inputs.Length; i++)//validation Loop
                 {
-                    bool result = regex3.IsMatch(inputs[i]);
+                    bool result = regex3.IsMatch(inputs);
                     if (result)
                     {
-                        Console.WriteLine(inputs[i] + " It is --->" + "Valid");
+                        Console.WriteLine(inputs + " It is --->" + "Valid");
                         return "happy";
                     }
                     else
                     {
-                        Console.WriteLine(inputs[i] + " It is --->" + "Invalid");
+                        Console.WriteLine(inputs+ " It is --->" + "Invalid");
                         return "sad";
                     }
                 }
@@ -120,15 +120,15 @@ namespace RegexAssignment
             {
                 for (int i = 0; i < inputs.Length; i++)//validation Loop
                 {
-                    bool result = regex3.IsMatch(inputs[i]);
+                    bool result = regex3.IsMatch(inputs);
                     if (result)
                     {
-                        Console.WriteLine(inputs[i] + " It is --->" + "Valid");
+                        Console.WriteLine(inputs + " It is --->" + "Valid");
                         return "happy";
                     }
                     else
                     {
-                        Console.WriteLine(inputs[i] + " It is --->" + "Invalid");
+                        Console.WriteLine(inputs+ " It is --->" + "Invalid");
                         return "sad";
                     }
                 }
