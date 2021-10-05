@@ -7,19 +7,19 @@ using System.Threading.Tasks;
 
 namespace RegexAssignment
 {
-  public  class Regex058assignment
+    public class Regex058assignment
     {
-    String emailPattern = "^[a-zA-Z0-9]+[._+]{0,1}[a-zA-Z0-9]*@[a-zA-Z0-9]{1,10}.[a-zA-Z]{2,10}[.]*[a-zA-Z]*$";
-        string namePattern= "^[A-Z]{1}[a-z]{3,}$";
-        string mobilePattern= "^[0-9]{2}[ ]*[0-9]{10}$";
-        string PasswordPattern= "^[a-zA-Z0-9]{1,}[@&*?_-]{1}[a-zA-Z0-9]*$";
+        String emailPattern = "^[a-zA-Z0-9]+[._+]{0,1}[a-zA-Z0-9]*@[a-zA-Z0-9]{1,10}.[a-zA-Z]{2,10}[.]*[a-zA-Z]*$";
+        string namePattern = "^[A-Z]{1}[a-z]{3,}$";
+        string mobilePattern = "^[0-9]{2}[ ]*[0-9]{10}$";
+        string PasswordPattern = "^[a-zA-Z0-9]{1,}[@&*?_-]{1}[a-zA-Z0-9]*$";
         /// <summary>
         /// Validation this instance.
         /// </summary>
         /// 
-        public string[] inputs;
+        public string inputs;
 
-        public Regex058assignment(string[] inputs)
+        public Regex058assignment(string inputs)
         {
             this.inputs = inputs;
         }
@@ -29,22 +29,29 @@ namespace RegexAssignment
             Console.WriteLine("Validating User Email ID : ");
             try
             {
+                if (Equals(string.Empty))
+                {
+                    throw new CustomException(CustomException.ExceptionType.EMPTY_TYPE_EXCEPTION, "Message should not be empty");
+                }
                 for (int i = 0; i < inputs.Length; i++)//validation Loop
                 {
-                    bool result = regrex1.IsMatch(inputs[i]);
+                    bool result = regrex1.IsMatch(inputs);
                     if (result)
                     {
-                        Console.WriteLine(inputs[i] + " It is --->" + "Valid");
+                        Console.WriteLine(inputs + " It is --->" + "Valid");
                         return "happy";
                     }
                     else
                     {
-                        Console.WriteLine(inputs[i] + " It is --->" + "Invalid");
+                        Console.WriteLine(inputs + " It is --->" + "Invalid");
                         return "sad";
                     }
                 }
                 return null;
-
+            }
+            catch (NullReferenceException)
+            {
+                throw new CustomException(CustomException.ExceptionType.INVALID_MOOD_EXCEPTION, "Message should not be null");
             }
             catch (Exception ex)
             {
@@ -58,22 +65,30 @@ namespace RegexAssignment
             Console.WriteLine("Validating User Email ID : ");
             try
             {
+                if (Equals(string.Empty))
+                {
+                    throw new CustomException(CustomException.ExceptionType.EMPTY_TYPE_EXCEPTION, "Message should not be empty");
+                }
                 for (int i = 0; i < inputs.Length; i++)//validation Loop
                 {
-                    bool result = regrex2.IsMatch(inputs[i]);
+                    bool result = regrex2.IsMatch(inputs);
                     if (result)
                     {
-                        Console.WriteLine(inputs[i] + " It is --->" + "Valid");
+                        Console.WriteLine(inputs + " It is --->" + "Valid");
                         return "happy";
                     }
                     else
                     {
-                        Console.WriteLine(inputs[i] + " It is --->" + "Invalid");
+                        Console.WriteLine(inputs + " It is --->" + "Invalid");
                         return "sad";
                     }
                 }
                 return null;
 
+            }
+            catch (NullReferenceException)
+            {
+                throw new CustomException(CustomException.ExceptionType.INVALID_MOOD_EXCEPTION, "Message should not be null");
             }
             catch (Exception ex)
             {
@@ -88,22 +103,30 @@ namespace RegexAssignment
             Console.WriteLine("Validating User Email ID : ");
             try
             {
+                if (Equals(string.Empty))
+                {
+                    throw new CustomException(CustomException.ExceptionType.EMPTY_TYPE_EXCEPTION, "Message should not be empty");
+                }
                 for (int i = 0; i < inputs.Length; i++)//validation Loop
                 {
-                    bool result = regex3.IsMatch(inputs[i]);
+                    bool result = regex3.IsMatch(inputs);
                     if (result)
                     {
-                        Console.WriteLine(inputs[i] + " It is --->" + "Valid");
+                        Console.WriteLine(inputs + " It is --->" + "Valid");
                         return "happy";
                     }
                     else
                     {
-                        Console.WriteLine(inputs[i] + " It is --->" + "Invalid");
+                        Console.WriteLine(inputs + " It is --->" + "Invalid");
                         return "sad";
                     }
                 }
                 return null;
 
+            }
+            catch (NullReferenceException)
+            {
+                throw new CustomException(CustomException.ExceptionType.INVALID_MOOD_EXCEPTION, "Message should not be null");
             }
             catch (Exception ex)
             {
@@ -118,22 +141,30 @@ namespace RegexAssignment
             Console.WriteLine("Validating User Email ID : ");
             try
             {
+                if (Equals(string.Empty))
+                {
+                    throw new CustomException(CustomException.ExceptionType.EMPTY_TYPE_EXCEPTION, "Message should not be empty");
+                }
                 for (int i = 0; i < inputs.Length; i++)//validation Loop
                 {
-                    bool result = regex3.IsMatch(inputs[i]);
+                    bool result = regex3.IsMatch(inputs);
                     if (result)
                     {
-                        Console.WriteLine(inputs[i] + " It is --->" + "Valid");
+                        Console.WriteLine(inputs + " It is --->" + "Valid");
                         return "happy";
                     }
                     else
                     {
-                        Console.WriteLine(inputs[i] + " It is --->" + "Invalid");
+                        Console.WriteLine(inputs + " It is --->" + "Invalid");
                         return "sad";
                     }
                 }
                 return null;
 
+            }
+            catch (NullReferenceException)
+            {
+                throw new CustomException(CustomException.ExceptionType.INVALID_MOOD_EXCEPTION, "Message should not be null");
             }
             catch (Exception ex)
             {
