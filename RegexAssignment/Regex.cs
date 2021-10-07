@@ -29,7 +29,7 @@ namespace RegexAssignment
             Console.WriteLine("Validating User Email ID : ");
             try
             {
-                if (Equals(string.Empty))
+                if (inputs.ToLower().Equals(string.Empty))
                 {
                     throw new CustomException(CustomException.ExceptionType.EMPTY_TYPE_EXCEPTION, "Message should not be empty");
                 }
@@ -55,8 +55,7 @@ namespace RegexAssignment
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
-                return null;
+                return ex.Message;
             }
         }
         public string NameValidation()
@@ -65,7 +64,7 @@ namespace RegexAssignment
             Console.WriteLine("Validating User Email ID : ");
             try
             {
-                if (Equals(string.Empty))
+                if (inputs.ToLower().Equals(string.Empty))
                 {
                     throw new CustomException(CustomException.ExceptionType.EMPTY_TYPE_EXCEPTION, "Message should not be empty");
                 }
@@ -92,8 +91,7 @@ namespace RegexAssignment
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
-                return null;
+                return ex.Message;
             }
 
         }
@@ -103,7 +101,7 @@ namespace RegexAssignment
             Console.WriteLine("Validating User Email ID : ");
             try
             {
-                if (Equals(string.Empty))
+                if (inputs.ToLower().Equals(string.Empty))
                 {
                     throw new CustomException(CustomException.ExceptionType.EMPTY_TYPE_EXCEPTION, "Message should not be empty");
                 }
@@ -130,8 +128,7 @@ namespace RegexAssignment
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
-                return null;
+                return ex.Message;
             }
 
         }
@@ -141,7 +138,7 @@ namespace RegexAssignment
             Console.WriteLine("Validating User Email ID : ");
             try
             {
-                if (Equals(string.Empty))
+                if (inputs.ToLower().Equals(string.Empty))
                 {
                     throw new CustomException(CustomException.ExceptionType.EMPTY_TYPE_EXCEPTION, "Message should not be empty");
                 }
@@ -168,8 +165,7 @@ namespace RegexAssignment
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
-                return null;
+                return ex.Message;
             }
 
         }

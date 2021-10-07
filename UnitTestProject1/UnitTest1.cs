@@ -67,8 +67,9 @@ namespace UnitTestProject1
             //AAA Methology
 
             //Arrange
+            string input= string.Empty;
             string excepted = "Message should not be empty";
-            Regex058assignment EmailValidation = new Regex058assignment(string.Empty);//Passing an Empty Message  To call Empty_Type_Exception
+            Regex058assignment EmailValidation = new Regex058assignment(input);//Passing an Empty Message  To call Empty_Type_Exception
             try
             {
                 //ACT
